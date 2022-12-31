@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .bio {
@@ -25,7 +27,7 @@ body {
     }
 
 .contact {
-    background: url('/Images/contact\ me\ bg.jpg');
+    background: url('../Images/contact me bg.jpg');
     background-size: cover;
 }
 
@@ -45,15 +47,13 @@ body {
     display: grid;
     grid-template-rows: repeat(5, 1fr)
     grid-template-columns: 1fr;
-    height: 100%;
-    width:100%;
     grid-template-areas: 
         "header"
         "bio"
         "skills"
         "qualifications"
-        "contact";
-}
+        "contact" 
+    }
 
 .get-in-touch {
     grid-column: span 3;
@@ -79,7 +79,7 @@ h4 {
 
 .header{
     grid-area: header;
-    background: url('/Images/Header-1gif.gif');
+    background: url('../Images/Header-1gif.gif');
     background-size: cover;
     width: 100%;
 }
@@ -140,7 +140,7 @@ h4 {
 }
 
 .qual {
-    background: url('/Images/Qualifications\ bg.jpg');
+    background: url('../Images/Qualifications\ bg.jpg');
     background-size: cover;
 }
 
@@ -194,7 +194,7 @@ h4 {
 }
 
 .skill {
-    background: url('/Images/Skills\ Bg.jpg');
+    background: url('../Images/Skills\ Bg.jpg');
     background-size: cover;
 }
 
