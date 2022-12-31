@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+}
+
+.bio {
+    justify-self: center;
+    align-self: flex-end;
+    grid-row: 2 3;
+    grid-column: span 2;
+    margin: 0;
+    text-shadow: 2px 4px 10px #000000;
+}
+
+.bio-container {
+    grid-area: "bio";
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (375 1fr));
+    grid-template-rows: repeat(auto-fit, minmax (667 12fr));
+    background-color: #E9E2D2;
+    width: 100%;
+    height: auto; 
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 1rem;
+    padding: 2.5rem 0;
+    }
+
+.contact {
+    background: url('/Images/contact\ me\ bg.jpg');
+    background-size: cover;
+}
+
+.contact-me {
+    grid-area: "contact";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5 10%);
+    align-items: center;
+    justify-self: center;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+    
+.container {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr)
+    grid-template-columns: 1fr;
+    height: 100%;
+    width:100%;
+    grid-template-areas: 
+        "header"
+        "bio"
+        "skills"
+        "qualifications"
+        "contact";
+}
+
+.get-in-touch {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+h2 {
+    text-shadow: 2px 4px 10px #000000;
+    font-family: 'Licorice', cursive;
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    text-shadow: 2px 4px 10px #000000;
+    font-family: 'Licorice', cursive;
+    font-size: 1.5rem; 
+}
+
+
+.header{
+    grid-area: header;
+    background: url('/Images/Header-1gif.gif');
+    background-size: cover;
+    width: 100%;
+}
+
+.header-grid {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-content: center;
+    justify-content: center;
+    width: 40%;
+    height: 22rem;
+    margin: 0 auto 0 36rem;
+}
+
+.mail-button {
+    align-self: center;
+    justify-self: center;
+    height: 60px;
+    }
+    
+.mail-button :hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    transition: ease, 0.1s;
+    height: 70px
+    }
+
+.my-skills {
+    position: relative;
+    left: 6px;
+    align-self: center;
+    grid-column: span 6;
+    margin: 0;
+    text-shadow: 2px 4px 10px #000000;
+}
+
+.profile-para {
+    grid-row: 2 3;
+    grid-column: 2 3;
+    align-self: center;
+    justify-self: flex-start;
+    font-family: 'Kaisei Tokumin', serif;
+    font-size: 1rem;
+    padding: 0 5rem;
+}
+
+.profile-pic {
+    position: relative;
+    bottom: 13px;
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    grid-row: span 1;
+    grid-column: 1;
+    padding-left: 2.5rem;
+}
+
+.qual {
+    background: url('/Images/Qualifications\ bg.jpg');
+    background-size: cover;
+}
+
+.qualifications {
+    grid-area: qualifications;
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: 1fr 6fr;
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 0;
+}
+
+.qual-item {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #6997BD , #1A70BF);
+    width: 12.5rem;
+    border: solid;
+    border-color: #000000;
+    border-radius: 10px;
+}
+    
+.qual-item:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+    
+.qual-list {
+    grid-row: 2;
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(6 16%);
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 0 2.5rem 9rem;
+    width: 100%;
+}
+
+.qual-title {
+    text-shadow: 8px 4px 10px #000000;
+    width: fit-content;
+    grid-row: 1;
+    align-self: flex-start;
+    margin: 0 0 10px 10%;
+    color: white;
+}
+
+.skill {
+    background: url('/Images/Skills\ Bg.jpg');
+    background-size: cover;
+}
+
+.skills {
+    grid-area: skills;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 9.38rem 9.38rem 9.38rem 9.38rem 9.38rem 9.38rem;
+    grid-template-rows: repeat(7, auto);
+    justify-content: center;
+    height: auto;
+    width: 70%;
+    font-size: 1rem;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.skills-img {
+    height: 2.5rem;
+    border: white;
+    border-radius: 4px;
+    justify-self: center;
+    align-self: center;
+}
+
+.skills-img :hover {
+    cursor: pointer;
+    height: 2.81rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    transition: ease, 0.3s;
+}
+
+.subtitle {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.25rem;
+    font-family: 'Kaisei Tokumin', serif;
+    margin: 0;
+}
+
+.title {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 5.6rem;
+    text-shadow: 2px 4px 10px #000000;
+    font-family: 'Licorice', cursive;
+    margin: 0;  
+}
+
+/*
+@media screen and (max-width: 380px) {
+    
+    .header-grid {
+        margin: 0 auto 0 33rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .header-grid {
+        margin: 0 auto 0 33rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .header-grid {
+        margin: 0 auto 0 36rem;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    
+    .header-grid {
+        margin: 0 auto 0 36rem;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    
+    .header-grid {
+        margin: 0 auto 0 36rem;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    
+    .header-grid {
+        margin: 0 auto 0 36rem;
+    }
+
+}
+
+@media screen and (max-width: 1920px) {
+    
+    .header-grid {
+        margin: 0 auto 0 36rem;
+    }
+
+}
